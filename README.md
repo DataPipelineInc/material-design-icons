@@ -2,6 +2,19 @@
 
 Material design icons are the official [icon set](http://www.google.com/design/spec/style/icons.html#icons-system-icons) from Google that are designed under the [material design guidelines](http://www.google.com/design/spec).
 
+## About Data Pipeline Fork
+
+### Export all svg icons
+
+export all svg icons to `__exported_svg` directory:
+
+```shell
+npm run export
+```
+
+------------
+
+
 ### 3.0.1 Update
 
 * Changed license in package.json.
