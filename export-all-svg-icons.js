@@ -50,7 +50,7 @@ const count = glob.sync(`${__dirname}/*/`)
       if (!matchRes) {
         throw new Error(`/^ic_(.*)_24px$/ can't match filename: ${fileName}`)
       }
-      const newFileName = startNumberToWord(matchRes[1].replace(/_/g, '-'))
+      const newFileName = startNumberToWord(matchRes[1]).replace(/_/g, '-')
       const cmd = `cp ${p} ${savedDir}/${newFileName}.svg`
       console.log(cmd)
       execSync(cmd)
